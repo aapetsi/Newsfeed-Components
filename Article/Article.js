@@ -113,6 +113,7 @@ const articleMaker = ({
   const p2 = document.createElement("p");
   const p3 = document.createElement("p");
   const spanBtn = document.createElement("span");
+  spanBtn.textContent = "Read More";
   spanBtn.classList.add("expandButton");
 
   // add text content
