@@ -14,16 +14,14 @@ const menuMaker = menuArray => {
   const menuDiv = document.createElement("div");
   menuDiv.classList.add("menu");
   const menuList = document.createElement("ul");
+  menuDiv.appendChild(menuList);
   const menuButton = document.querySelector(".menu-button");
 
   menuArray.forEach(item => {
     const listItem = document.createElement("li");
     listItem.textContent = item;
-    console.log(menuList.appendChild(listItem));
-
-    // return menuList.appendChild(listItem);
+    menuList.appendChild(listItem);
   });
-  console.log(menuList);
 
   menuButton.addEventListener("click", () => {
     return menuDiv.classList.toggle("menu--open");

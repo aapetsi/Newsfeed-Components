@@ -105,7 +105,7 @@ const articleMaker = ({
   // create elements
   const article = document.createElement("div");
   article.classList.add("article");
-  // article.classList.add("article-open");
+  article.classList.add("article-open");
   const h2 = document.createElement("h2");
   const p = document.createElement("p");
   p.classList.add("date");
